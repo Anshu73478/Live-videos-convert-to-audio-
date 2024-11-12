@@ -1,3 +1,7 @@
+######
+# install this library the after run  
+pip install yt-dlp ffmpeg-python pydub tqdm
+pip install ffmpeg-python
 
 #################################################
 # locally run on vs code 
@@ -45,7 +49,7 @@ def youtube_to_audio_stream(youtube_url):
     except Exception as e:
         print(f"Error processing audio chunk: {e}")
         return None
-youtube_url = "https://www.youtube.com/watch?v=67_aMPDk2zw&ab_channel=codebasics"
+youtube_url = "Enter your youtube video url"
 audio_segment = youtube_to_audio_stream(youtube_url)
 if audio_segment:
     print("Audio segment loaded successfully")
